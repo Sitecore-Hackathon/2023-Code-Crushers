@@ -1,13 +1,16 @@
-import { Text, RichText, Field, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
-import { ComponentProps } from 'lib/component-props';
+import {
+  Text,
+  RichText,
+  Field,
+  ImageField,
+  useSitecoreContext,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 
-type HomepageMastheadProps = ComponentProps & {
-  fields: {
-    heading: Field<string>;
-    copy: Field<string>;
-    subheading: Field<string>;
-    image: ImageField;
-  };
+type HomepageMastheadProps = {
+  heading: Field<string>;
+  copy: Field<string>;
+  subheading: Field<string>;
+  image: ImageField;
 };
 
 /**
@@ -15,12 +18,17 @@ type HomepageMastheadProps = ComponentProps & {
  * This is the most basic building block of a content site, and the most basic
  * JSS component that's useful.
  */
-const HomepageMasthead = ({ fields }: HomepageMastheadProps): JSX.Element => (
-  <div className="contentBlock">
-    <Text tag="h2" className="contentTitle" field={fields.heading} />
+const HomepageMasthead = (): JSX.Element => {
+  const ctx = useSitecoreContext();
+  const contextFields = ctx.sitecoreContext.route?.fields as HomepageMastheadProps;
 
-    <RichText className="contentDescription" field={fields.copy} />
-  </div>
-);
+  return (
+    <div className="contentBlock">
+      <Text tag="h2" className="contentTitle" field={contextFields?.heading} />
+
+      <RichText className="contentDescription" field={contextFields?.subheading} />
+    </div>
+  );
+};
 
 export default HomepageMasthead;
