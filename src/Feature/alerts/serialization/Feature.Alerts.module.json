@@ -13,6 +13,7 @@
                 "path": "/sitecore/layout/Renderings/Feature/Hackathon2023/Alerts",
                 "allowedPushOperations": "CreateUpdateAndDelete"
             }
+            
         ]
     }
 }

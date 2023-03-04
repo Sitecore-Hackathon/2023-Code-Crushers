@@ -9,6 +9,11 @@
                 "allowedPushOperations": "CreateUpdateAndDelete"
             },
             {
+                "name": "layout",
+                "path": "/sitecore/layout/Layouts/Project/Hackathon2023",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
                 "name": "content",
                 "path": "/sitecore/content/Hackathon2023",
                 "allowedPushOperations": "CreateUpdateAndDelete"
@@ -19,6 +24,11 @@
                 "allowedPushOperations": "CreateUpdateAndDelete"
             },
             {
+                "name": "medialibraryproject",
+                "path": "/sitecore/media library/Project/Hackathon2023",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
                 "name": "renderinghost",
                 "path": "/sitecore/system/Settings/Services/Rendering Hosts/Default",
                 "allowedPushOperations": "CreateUpdateAndDelete"
@@ -26,6 +36,16 @@
             {
                 "name": "apikey",
                 "path": "/sitecore/system/Settings/Services/API Keys/NextJS API Key",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "apikey",
+                "path": "/sitecore/system/Settings/Services/API Keys/NextJS API Key",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "phsettings",
+                "path": "/sitecore/layout/Placeholder Settings/Project/Hackathon2023",
                 "allowedPushOperations": "CreateUpdateAndDelete"
             }
         ]

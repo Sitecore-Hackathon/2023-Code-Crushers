@@ -17,6 +17,11 @@
                 "name": "phsettings",
                 "path": "/sitecore/layout/Placeholder Settings/Feature/Hackathon2023/Navigation",
                 "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "medialibrary",
+                "path": "/sitecore/media library/Feature/Hackathon2023/Navigation",
+                "allowedPushOperations": "CreateUpdateAndDelete"
             }
         ]
     }
