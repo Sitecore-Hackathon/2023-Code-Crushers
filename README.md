@@ -57,6 +57,8 @@ Enhacements to SXA Headless
 5. Run `$env:NODE_TLS_REJECT_UNAUTHORIZED=0` - This is needed if Sitecore instance is running over http and Nextjs is running over http
 6. Run `jss setup`
     - Note: Api Key is serialized in the project, make sure you use `{5CE2A14E-6F26-4ED2-BC8B-D49A81360720}`
+    - Note: Make sure the deployment secret used is `RPvBNxW5VtDGyiQFpNiyxpye5F4zdZ1ldxskaJGiDrFf5F8UPf5ttYDDIxyCA0VX`
+    - Note: Make sure the host is pointing to your environment
 7. Run `jss deploy config`
 8. Run `jss start:connected`
 
