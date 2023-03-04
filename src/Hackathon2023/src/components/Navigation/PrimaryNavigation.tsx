@@ -1,6 +1,9 @@
 import { Image, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
-type PrimaryNavProps = {
-  logo: ImageField;
+import { ComponentProps } from 'lib/component-props';
+type PrimaryNavProps = ComponentProps & {
+  fields: {
+    logo: ImageField;
+  };
 };
 
 /**
@@ -8,9 +11,9 @@ type PrimaryNavProps = {
  * This is the most basic building block of a content site, and the most basic
  * JSS component that's useful.
  */
-const PrimaryNavigation = (props: PrimaryNavProps): JSX.Element => (
+const PrimaryNavigation = ({ fields }: PrimaryNavProps): JSX.Element => (
   <div className="contentBlock">
-    <Image className="contentDescription" src={props.logo.value?.src} />
+    <Image className="contentDescription" src={fields.logo.value?.src} />
   </div>
 );
 

@@ -1,6 +1,10 @@
 import { Image, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
-type HeaderProps = {
-  logo: ImageField;
+import { ComponentProps } from 'lib/component-props';
+
+type HeaderProps = ComponentProps & {
+  fields: {
+    logo: ImageField;
+  };
 };
 
 /**
@@ -8,9 +12,9 @@ type HeaderProps = {
  * This is the most basic building block of a content site, and the most basic
  * JSS component that's useful.
  */
-const Header = (props: HeaderProps): JSX.Element => (
+const Header = ({ fields }: HeaderProps): JSX.Element => (
   <div className="contentBlock">
-    <Image className="contentDescription" src={props.logo.value?.src} />
+    <Image className="contentDescription" src={fields.logo?.value?.src} />
   </div>
 );
 

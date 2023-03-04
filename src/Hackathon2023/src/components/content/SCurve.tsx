@@ -1,10 +1,13 @@
 import { Text, RichText, Field, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { ComponentProps } from 'lib/component-props';
 
-type SCurveProps = {
-  heading: Field<string>;
-  copy: Field<string>;
-  image: ImageField;
-  cta: LinkField;
+type SCurveProps = ComponentProps & {
+  fields: {
+    heading: Field<string>;
+    copy: Field<string>;
+    image: ImageField;
+    cta: LinkField;
+  };
 };
 
 /**
@@ -12,11 +15,11 @@ type SCurveProps = {
  * This is the most basic building block of a content site, and the most basic
  * JSS component that's useful.
  */
-const SCurve = (props: SCurveProps): JSX.Element => (
+const SCurve = ({ fields }: SCurveProps): JSX.Element => (
   <div className="contentBlock">
-    <Text tag="h2" className="contentTitle" field={props.heading} />
+    <Text tag="h2" className="contentTitle" field={fields.heading} />
 
-    <RichText className="contentDescription" field={props.copy} />
+    <RichText className="contentDescription" field={fields.copy} />
   </div>
 );
 
