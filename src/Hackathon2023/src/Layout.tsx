@@ -40,15 +40,15 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
 
       {/* root placeholder for the app, which we add components to using route data */}
       <div className={mainClassPageEditing}>
+        {route && <Placeholder name="hackathon2023-alerts" rendering={route} />}
         <header>
           <div id="header">
             {route && <Placeholder name="hackathon2023-header" rendering={route} />}
           </div>
         </header>
         <main>
-          <div id="content">
-            {route && <Placeholder name="hackathon2023-rows" rendering={route} />}
-          </div>
+          {route && <Placeholder name="hackathon2023-masthead" rendering={route} />}
+          {route && <Placeholder name="hackathon2023-rows" rendering={route} />}
         </main>
         <footer>
           <div id="footer">
