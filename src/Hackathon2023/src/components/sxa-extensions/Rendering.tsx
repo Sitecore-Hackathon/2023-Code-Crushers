@@ -3,7 +3,7 @@ import { componentFactory } from 'temp/componentFactory';
 import { getDatasource } from './getDatasource';
 
 type RenderingProps = {
-  guid: string;
+  datasourceID: string;
   componentName: string;
 };
 
@@ -11,7 +11,7 @@ const Rendering = (props: RenderingProps): JSX.Element => {
   const [views, setViews] = useState([]);
 
   useEffect(() => {
-    getStaticProps(props.guid).then((p) => {
+    getStaticProps(props.datasourceID).then((p) => {
       const Comp = componentFactory(props.componentName);
       setViews([<Comp {...p} />]);
     });

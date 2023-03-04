@@ -1,0 +1,33 @@
+{
+    "$schema": "../../../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "Project.Site",
+    "items": {
+        "includes": [
+            {
+                "name": "templates",
+                "path": "/sitecore/templates/Project/Hackathon2023",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "content",
+                "path": "/sitecore/content/Hackathon2023",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "medialibrary",
+                "path": "/sitecore/media library/Feature/Hackathon2023",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "apikey",
+                "path": "/sitecore/system/Settings/Services/Rendering Hosts/Default",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "medialibrary",
+                "path": "/sitecore/system/Settings/Services/API Keys/NextJS API Key",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            }
+        ]
+    }
+}

@@ -12,7 +12,6 @@ import {
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import Scripts from 'src/Scripts';
 import Rendering from 'components/sxa-extensions/Rendering';
-import dynamic from 'next/dynamic';
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
@@ -42,7 +41,10 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
 
       {/* root placeholder for the app, which we add components to using route data */}
       <div className={mainClassPageEditing}>
-        <Rendering guid="{45B9ED06-8E0B-4685-8BD0-868ED3552BCC}" componentName="AlertBanner" />
+        <Rendering
+          datasourceID="{45B9ED06-8E0B-4685-8BD0-868ED3552BCC}"
+          componentName="AlertBanner"
+        />
 
         <header>
           <div id="header">
