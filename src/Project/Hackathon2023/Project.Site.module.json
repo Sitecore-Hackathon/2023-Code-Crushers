@@ -19,11 +19,6 @@
                 "allowedPushOperations": "CreateUpdateAndDelete"
             },
             {
-                "name": "medialibrary",
-                "path": "/sitecore/media library/Feature/Hackathon2023",
-                "allowedPushOperations": "CreateUpdateAndDelete"
-            },
-            {
                 "name": "medialibraryproject",
                 "path": "/sitecore/media library/Project/Hackathon2023",
                 "allowedPushOperations": "CreateUpdateAndDelete"
