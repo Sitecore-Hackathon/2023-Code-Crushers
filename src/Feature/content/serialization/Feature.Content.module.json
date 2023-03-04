@@ -12,6 +12,11 @@
                 "name": "renderings",
                 "path": "/sitecore/layout/Renderings/Feature/Hackathon2023/Content",
                 "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "mediaLibrary",
+                "path": "/sitecore/media library/Feature/Hackathon2023/Content",
+                "allowedPushOperations": "CreateUpdateAndDelete"
             }
         ]
     }
