@@ -14,9 +14,13 @@
   }
 }
 
-header {
+.header {
   .logo {
     inline-size: 100px;
+
+    @include respond-to(mobile-large) {
+      inline-size: 60px;
+    }
     aspect-ratio: 1/1;
     block-size: auto;
   }

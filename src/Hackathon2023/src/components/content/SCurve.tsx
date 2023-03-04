@@ -1,4 +1,12 @@
-import { Text, RichText, Field, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
+import {
+  Text,
+  RichText,
+  Field,
+  ImageField,
+  LinkField,
+  Image,
+  Link,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 
 type SCurveProps = ComponentProps & {
@@ -16,10 +24,15 @@ type SCurveProps = ComponentProps & {
  * JSS component that's useful.
  */
 const SCurve = ({ fields }: SCurveProps): JSX.Element => (
-  <div className="contentBlock">
-    <Text tag="h2" className="contentTitle" field={fields.heading} />
-
-    <RichText className="contentDescription" field={fields.copy} />
+  <div className="s-curve">
+    <div className="content">
+      <Text tag="h2" className="title" field={fields.heading} />
+      <RichText className="description" field={fields.copy} />
+      {fields.cta.value.href && <Link className="cta" field={fields.cta} />}
+    </div>
+    <div className="image-container">
+      <Image field={fields.image} />
+    </div>
   </div>
 );
 

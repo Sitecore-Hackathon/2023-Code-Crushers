@@ -18,12 +18,12 @@ type HomepageMastheadProps = ComponentProps & {
  */
 const HomepageMasthead = ({ fields }: HomepageMastheadProps): JSX.Element => {
   return (
-    <div className="content-block">
-      <div className="content-block__content">
+    <div className="homepage-masthead">
+      <div>
         <Text tag="h1" className="title" field={fields?.heading} />
         <RichText className="description" field={fields?.subheading} />
       </div>
-      <div className="image-container">
+      <div className="image">
         <Image field={{ value: { src: fields.image.value?.src } }} />
       </div>
     </div>
