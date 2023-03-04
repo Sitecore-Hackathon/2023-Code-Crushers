@@ -9,8 +9,6 @@
 
 # Hackathon Submission Entry form
 
-You can find a very good reference to Github flavoured markdown reference in [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). If you want something a bit more WYSIWYG for editing then could use [StackEdit](https://stackedit.io/app) which provides a more user friendly interface for generating the Markdown code. Those of you who are [VS Code fans](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can edit/preview directly in that interface too.
-
 ## Team name
 
 Code Crushers
@@ -21,14 +19,15 @@ Enhacements to SXA Headless
 
 ## Description
 
--   We have created various helpers to allow developers to start working with SXA Headless easily. This helpers will speed up the development process.
--   Since we couldn't find a way to easily add static binding on a Headless layout we created a component to help with this. Also, we created a HOC to seamlessly fallback to the context item if there's no datasource selected. This will work as the base for more helper components in the future.
+-   We have built a demo site where we have introduced a few helpers to enhance SXA headless.
+    Our site consits of 3 pages and 6 modules, some of which have been statically bound. Our alerts and footer specifically, are using our Static Binding component which we have called Rendering. This component expects 2 parameters, the component name that we want to bind and the guid for the datasource which is optional. This allows to mimic the Rendering helper function we are used to on a regular MVC solution. We decided to create this component because we did not find a way to statically bind components.
+
+-   Also, we used the High Order Component pattern to create a component that easily allows us to get the datasource for a rendering, if a datasourse isn't used then our component takes the context item as the datasource. This basically helps speed up the development process and have consistency throughout a solution.
+-   Our demo site also serves as a SXA starter kit with modules for Header, Footer, Alerts, S Curves, Masthead, etc. This module also support variations you will also see how we have built components and how we have used our helper componentes everywhere
 
 ## Video link
 
-⟹ Provide a video highlighing your Hackathon module submission and provide a link to the video. You can use any video hosting, file share or even upload the video to this repository. _Just remember to update the link below_
-
-⟹ [Replace this Video link](#video-link)
+[Demo Video Link](#video-link)
 
 ## Pre-requisites and Dependencies
 
@@ -40,43 +39,35 @@ Enhacements to SXA Headless
 
 ## Installation instructions
 
-⟹ Write a short clear step-wise instruction on how to install your module.
-
-> _A simple well-described installation process is required to win the Hackathon._  
-> Feel free to use any of the following tools/formats as part of the installation:
->
-> -   Sitecore Package files
-> -   Docker image builds
-> -   Sitecore CLI
-> -   msbuild
-> -   npm / yarn
->
-> _Do not use_
->
-> -   TDS
-> -   Unicorn
-
-for example:
-
 #### Sitecore Setup
 
-1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-2. ...
-3. profit
+1. Install Sitecore 10.3 XM with SXA using SIA
+2. Install Sitecore CLI
+3. Login to Sitecore CLI
+4. Run `dotnet sitecore ser push`
+5. Publish site
 
 #### Rendering Host Setup
 
+1. Go to `src/Hackathon2023`
+2. Install JSS CLI - `npm install -g @sitecore-jss/sitecore-jss-cli`
+3. Run `Set ExecutionPolicy Unrestricted`
+4. Run `npm i`
+5. Run `$env:NODE_TLS_REJECT_UNAUTHORIZED=0` - This is needed if Sitecore instance is running over http and Nextjs is running over http
+6. Run `jss setup`
+    - Note: Api Key is serialized in the project, make sure you use `{5CE2A14E-6F26-4ED2-BC8B-D49A81360720}`
+7. Run `jss deploy config`
+8. Run `jss start:connected`
+
 ### Configuration
 
-⟹ If there are any custom configuration that has to be set manually then remember to add all details here.
-
-_Remove this subsection if your entry does not require any configuration that is not fully covered in the installation instructions already_
+Make sure that .env is setup accordingly to your Sitecore Instance.
 
 ## Usage instructions
 
 ### Static Rendering Binding
 
-Usually, as developer you might need to add a component directly in the layout `@Html.Sitecore.Rendering('')`.
+Usually, as a Sitecore developer you might want to add a component directly in the layout as we were used in a regular MVC Project as follows `@Html.Sitecore.Rendering('')`. We noticed that this approach was not possible with existing JSS tools that come OOTB. Our new Rendering component can be used like this.
 
 ```tsx
 import Rendering from "components/sxa-extensions/Rendering";
@@ -87,12 +78,12 @@ import Rendering from "components/sxa-extensions/Rendering";
 />;
 ```
 
--   **Datasource ID** : Path or GUID of datasource associanted to the rendering
+-   **Datasource ID** : (Optional) Path or GUID of datasource associanted to the rendering
 -   **Component Name**: Name of the NextJs Component
 
 ### Sitecore Context Item Fallback for Component
 
-In some scenarios, Instead of checking for a datasource connected to a component. You will need a fallback to context item. But your code will be much cleaner if you just use the following HOC pattern.
+Similarly to `withDatasourceCheck` that comes OOTB to enforce a component to have a Datasource, we created a new High-Order component called `withDatasourceRendering` that is meant to help developers code faster by automatically checking for a Datasource if available, if not the datasource will fallback to the context item.
 
 ```tsx
 export default withDatasourceRendering()<HomepageMastheadProps>(
@@ -102,16 +93,33 @@ export default withDatasourceRendering()<HomepageMastheadProps>(
 
 This pattern takes the Component and validates if the rendering has any datasource to return fields as normal call otherwise fields will be populated with `useSitecoreContext`
 
+### Quickstart Modules available for reuse.
+
+#### Alerts
+
+-   Alert Banner
+    ![Alert Banner](docs/images/modules/AlertBanner.png?raw=true "Alert Banner")
+
+#### Content
+
+-   Call To Action
+
+-   S Curve
+    ![S Curve](docs/images/modules/SCurve-Left.png?raw=true "S Curve")
+    ![S Curve](docs/images/modules/SCurve-Right.png?raw=true "S Curve")
+
+#### Mastheads
+
+-   Homepage Masthead
+    ![Homepage Masthead](docs/images/modules/HomePageMasthead.png?raw=true "Homepage Masthead")
+
+#### Navigation
+
+-   Header
+    ![Header](docs/images/modules/Header.png?raw=true "Header")
+-   Footer
+    ![Footer](docs/images/modules/Footer.png?raw=true "Footer")
+
+---
+
 ![Hackathon Logo](docs/images/hackathon.png?raw=true "Hackathon Logo")
-
-You can embed images of different formats too:
-
-![Deal With It](docs/images/deal-with-it.gif?raw=true "Deal With It")
-
-And you can embed external images too:
-
-![Random](https://thiscatdoesnotexist.com/)
-
-## Comments
-
-If you'd like to make additional comments that is important for your module entry.
