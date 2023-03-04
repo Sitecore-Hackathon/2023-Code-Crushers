@@ -33,6 +33,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "@popperjs/core": "^2.11.6",
     "@sitecore-jss/sitecore-jss-nextjs": "^21.0.8",
     "bootstrap": "^5.1.3",
     "font-awesome": "^4.7.0",
@@ -92,4 +93,3 @@
     "start:watch-components": "ts-node --project tsconfig.scripts.json scripts/generate-component-factory.ts --watch"
   }
 }
-
