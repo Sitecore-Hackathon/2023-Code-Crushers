@@ -43,9 +43,10 @@ Enhacements to SXA Headless
 
 1. Install Sitecore 10.3 XM with SXA using SIA
 2. Install Sitecore CLI
-3. Login to Sitecore CLI
-4. Run `dotnet sitecore ser push`
-5. Publish site
+3. Install Sitecore Management Services Module
+4. Login to Sitecore CLI `dotnet sitecore login --authority <IDENTITY SERVER INSTANCE URL> --cm <SITECORE INSTANCE URL> --allow-write true`
+5. Run `dotnet sitecore ser push`
+6. Publish site
 
 #### Rendering Host Setup
 
