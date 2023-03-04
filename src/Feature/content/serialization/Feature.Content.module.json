@@ -1,0 +1,13 @@
+{
+    "$schema": "../../../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "Feature.Content",
+    "items": {
+        "includes": [
+            {
+                "name": "templates",
+                "path": "/sitecore/templates/Feature/Hackathon2023/Content",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            }
+        ]
+    }
+}
