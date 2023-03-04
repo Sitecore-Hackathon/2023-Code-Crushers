@@ -8,7 +8,6 @@ import {
   getPublicUrl,
   LayoutServiceData,
   Field,
-  GetStaticComponentProps,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import Scripts from 'src/Scripts';
 import Rendering from 'components/sxa-extensions/Rendering';
@@ -67,7 +66,5 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
     </>
   );
 };
-
-export const getStaticProps: GetStaticComponentProps = async () => {};
 
 export default Layout;
