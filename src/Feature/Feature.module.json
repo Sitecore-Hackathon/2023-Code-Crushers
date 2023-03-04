@@ -1,0 +1,32 @@
+{
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "Feature",
+    "items": {
+        "includes": [
+            {
+                "name": "templates",
+                "path": "/sitecore/templates/Feature/Hackathon2023",
+                "allowedPushOperations": "CreateOnly",
+                "scope": "singleItem"
+            },
+            {
+                "name": "rendrings",
+                "path": "/sitecore/layout/Renderings/Feature/Hackathon2023",
+                "allowedPushOperations": "CreateOnly",
+                "scope": "singleItem"
+            },
+            {
+                "name": "placeholderSettings",
+                "path": "/sitecore/layout/Placeholder Settings/Feature/Hackathon2023",
+                "allowedPushOperations": "CreateOnly",
+                "scope": "singleItem"
+            },
+            {
+                "name": "mediaLibrary",
+                "path": "/sitecore/media library/Feature/Hackathon2023",
+                "allowedPushOperations": "CreateOnly",
+                "scope": "singleItem"
+            }
+        ]
+    }
+}
