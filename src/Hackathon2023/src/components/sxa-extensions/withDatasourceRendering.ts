@@ -2,7 +2,7 @@ import { ComponentRendering, useSitecoreContext } from '@sitecore-jss/sitecore-j
 import React from 'react';
 
 export interface WithDatasourceRenderingProps {
-  rendering: ComponentRendering;
+  rendering?: ComponentRendering;
   fields?: unknown;
   dataFields?: unknown;
 }
@@ -13,7 +13,7 @@ export function withDatasourceRendering(): <ComponentProps extends WithDatasourc
   return (Component) => {
     // eslint-disable-next-line react/display-name
     return (props) => {
-      if (!props.rendering.dataSource) {
+      if (!props.rendering?.dataSource) {
         const { sitecoreContext } = useSitecoreContext();
         return React.createElement(
           Component,
