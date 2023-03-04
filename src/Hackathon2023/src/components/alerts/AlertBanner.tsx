@@ -6,12 +6,12 @@ type AlertBannerProps = ComponentProps & {
     heading: Field<string>;
     copy: Field<string>;
     icon: ImageField;
+    alertstyle: Field<string>;
   };
-  test: string;
 };
 const AlertBanner = (props: AlertBannerProps): JSX.Element => (
   <div
-    className="alert-banner alert-dismissible fade show alert alert-primary d-flex gap-3 align-items-center p-5"
+    className={`alert-banner alert-dismissible fade show alert alert-${props.fields.alertstyle.value} d-flex gap-3 align-items-center p-5}`}
     role="alert"
   >
     <svg

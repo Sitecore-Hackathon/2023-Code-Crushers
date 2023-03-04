@@ -6,9 +6,14 @@
     }
   }
 }
+
+.row {
+  margin: $middle-margin 0;
+}
+
 @include respond-to(mobile-large) {
   .row {
-    margin: 0;
+    margin: $small-margin 0;
     padding: 0;
     > * {
       padding: 0;

@@ -2,61 +2,17 @@
 @import '@sass/abstracts/mixins';
 @import 'variables';
 
-.prod-mode {
-  #header {
-    display: flex;
-    flex-direction: column;
-
-    @include respond-to(mobile-large) {
-      padding-bottom: 0;
-      flex-direction: column-reverse;
-    }
-  }
-}
-
 .header {
-  .logo {
-    inline-size: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: $large-margin;
+  padding-block: $small-margin;
+  inline-size: 100%;
 
-    @include respond-to(mobile-large) {
-      inline-size: 60px;
-    }
-    aspect-ratio: 1/1;
-    block-size: auto;
+  .logo {
+    inline-size: 70px;
   }
 
   border-block-end: 2px solid $border-gray;
-
-  #header {
-    .bs-title {
-      padding-left: 50px;
-
-      h1 {
-        font-size: $text-size-24;
-        font-weight: 600;
-        line-height: 18px;
-        padding-top: 40px;
-        margin: 0;
-      }
-    }
-
-    @include respond-to(mobile-large) {
-      padding-bottom: 0;
-      padding-top: 0;
-      flex-direction: column-reverse;
-
-      .title {
-        padding-left: 0;
-        text-align: center;
-        margin-top: -5px;
-
-        h1 {
-          font-weight: 500;
-          line-height: 29px;
-          padding-top: 0;
-          margin-bottom: 10px;
-        }
-      }
-    }
-  }
 }
