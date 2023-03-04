@@ -8,13 +8,13 @@ type RenderingProps = {
 };
 
 const Rendering = (props: RenderingProps): JSX.Element => {
-  const [views, setViews] = useState([]);
+  const [views, setViews] = useState<JSX.Element[]>([]);
 
   useEffect(() => {
     if (!props.datasourceID) return;
     getStaticProps(props.datasourceID).then((p) => {
       const Comp = componentFactory(props.componentName);
-      setViews([<Comp {...p} />]);
+      setViews([<Comp {...p} key="first" />]);
     });
   }, []);
 

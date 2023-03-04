@@ -2,14 +2,14 @@ import type { AppProps } from 'next/app';
 import { I18nProvider } from 'next-localization';
 import { SitecorePageProps } from 'lib/page-props';
 import 'assets/main.scss';
-import { useEffect } from 'react';
+import 'bootstrap/dist/js/bootstrap';
 
 function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element {
   const { dictionary, ...rest } = pageProps;
 
-  useEffect(() => {
+  /* useEffect(() => {
     import('bootstrap/dist/js/bootstrap');
-  }, []);
+  }, []); */
 
   return (
     // Use the next-localization (w/ rosetta) library to provide our translation dictionary to the app.
