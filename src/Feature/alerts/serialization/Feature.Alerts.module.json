@@ -7,6 +7,11 @@
                 "name": "templates",
                 "path": "/sitecore/templates/Feature/Hackathon2023/Alerts",
                 "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "renderings",
+                "path": "/sitecore/layout/Renderings/Feature/Hackathon2023/Alerts",
+                "allowedPushOperations": "CreateUpdateAndDelete"
             }
         ]
     }

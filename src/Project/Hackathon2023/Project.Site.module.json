@@ -19,12 +19,12 @@
                 "allowedPushOperations": "CreateUpdateAndDelete"
             },
             {
-                "name": "apikey",
+                "name": "renderinghost",
                 "path": "/sitecore/system/Settings/Services/Rendering Hosts/Default",
                 "allowedPushOperations": "CreateUpdateAndDelete"
             },
             {
-                "name": "medialibrary",
+                "name": "apikey",
                 "path": "/sitecore/system/Settings/Services/API Keys/NextJS API Key",
                 "allowedPushOperations": "CreateUpdateAndDelete"
             }
