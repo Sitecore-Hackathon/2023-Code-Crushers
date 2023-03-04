@@ -14,7 +14,10 @@ type HeaderProps = ComponentProps & {
  */
 const Header = ({ fields, rendering }: HeaderProps): JSX.Element => (
   <div className="header">
-    <Image className="logo" field={{ value: { src: fields.logo?.value?.src } }} />
+    <a href="/">
+      <Image className="logo" field={{ value: { src: fields.logo?.value?.src } }} />
+    </a>
+
     <div className="primary-nav-container">
       <Placeholder name="primary-nav" rendering={rendering} />
     </div>

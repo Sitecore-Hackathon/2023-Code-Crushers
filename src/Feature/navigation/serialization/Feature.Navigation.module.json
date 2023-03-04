@@ -12,6 +12,11 @@
                 "name": "renderings",
                 "path": "/sitecore/layout/Renderings/Feature/Hackathon2023/Navigation",
                 "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "phsettings",
+                "path": "/sitecore/layout/Placeholder Settings/Feature/Hackathon2023/Navigation",
+                "allowedPushOperations": "CreateUpdateAndDelete"
             }
         ]
     }
