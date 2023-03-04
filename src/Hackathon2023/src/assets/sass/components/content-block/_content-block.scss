@@ -1,0 +1,40 @@
+@import '@sass/abstracts/vars';
+@import '@sass/abstracts/mixins';
+
+.content-block {
+  display: flex;
+  align-items: center;
+
+  & > * {
+    flex: 50% 0 0;
+
+    @include respond-to(mobile-large) {
+      flex: 100% 1 1;
+    }
+  }
+
+  .image-container {
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .title {
+    @include respond-to(mobile-large) {
+      font-size: $font-big;
+    }
+
+    font-size: $font-extrabig;
+  }
+
+  @include respond-to(mobile-large) {
+    flex-direction: column;
+  }
+
+  .content-block__content {
+    inline-size: 100%;
+    @include respond-to(mobile-large) {
+      padding: $middle-margin;
+    }
+    padding: $extralarge-margin;
+  }
+}

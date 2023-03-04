@@ -1,6 +1,6 @@
-@import "@sass/abstracts/vars/colors";
-@import "@sass/abstracts/mixins";
-@import "variables";
+@import '@sass/abstracts/vars/colors';
+@import '@sass/abstracts/mixins';
+@import 'variables';
 
 .prod-mode {
   #header {
@@ -15,6 +15,14 @@
 }
 
 header {
+  .logo {
+    inline-size: 100px;
+    aspect-ratio: 1/1;
+    block-size: auto;
+  }
+
+  border-block-end: 2px solid $border-gray;
+
   #header {
     .bs-title {
       padding-left: 50px;

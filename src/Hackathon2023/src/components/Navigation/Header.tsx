@@ -13,8 +13,8 @@ type HeaderProps = ComponentProps & {
  * JSS component that's useful.
  */
 const Header = ({ fields }: HeaderProps): JSX.Element => (
-  <div className="contentBlock">
-    <Image className="contentDescription" src={fields.logo?.value?.src} />
+  <div className="header">
+    <Image className="logo" field={{ value: { src: fields.logo?.value?.src } }} />
   </div>
 );
 
