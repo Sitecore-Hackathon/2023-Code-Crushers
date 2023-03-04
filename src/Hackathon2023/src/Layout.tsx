@@ -57,7 +57,10 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
         </main>
         <footer>
           <div id="footer">
-            {route && <Placeholder name="hackathon2023-footer" rendering={route} />}
+            <Rendering
+              datasourceID="{736C7065-CC8B-4E7D-B571-4BA3D8976B40}"
+              componentName="Footer"
+            />
           </div>
         </footer>
       </div>
