@@ -1,0 +1,27 @@
+﻿---
+ID: "04ee3045-81e7-4d48-b7a5-e40d65fd7cda"
+Parent: "7063331a-fc8a-4a6f-8acd-542493f65fda"
+Template: "7063331a-fc8a-4a6f-8acd-542493f65fda"
+Path: /sitecore/templates/Project/Hackathon2023/JSS Settings/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230304T011523Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fc923cd7-88ec-4b11-849e-ac773a8135cf"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230304T011523Z

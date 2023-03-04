@@ -1,0 +1,38 @@
+﻿---
+ID: "736c7065-cc8b-4e7d-b571-4ba3d8976b40"
+Parent: "4dafe628-11e9-4239-bfe9-4b95620c15c1"
+Template: "17a37fe9-d5fb-4419-abcc-0b3d306bead8"
+Path: /sitecore/content/Hackathon2023/Hackathon2023/Data/Footer/default
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230304T054026Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "72b04b62-6297-468c-8166-5d4cea3e8003"
+    - ID: "9390b325-0380-44a4-8a4c-52f41641302f"
+      Hint: copyright
+      Value: Code Crushers 2023
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c52aeae0-88f8-487c-9a41-7df0ff74656b"
+      Hint: logo
+      Value: |
+        <image mediaid="{3332A5EE-0F84-46FA-A39A-4822C2658180}" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230304T161623Z

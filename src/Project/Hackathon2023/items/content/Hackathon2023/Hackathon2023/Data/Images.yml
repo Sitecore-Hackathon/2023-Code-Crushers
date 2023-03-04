@@ -1,0 +1,31 @@
+﻿---
+ID: "e97d91d3-e082-485b-a137-3f3b18df938d"
+Parent: "5543cfed-5ab7-42d0-b20e-0c4a02ab31d4"
+Template: "f7a45276-87f1-4ea5-bf25-e3c7cb7aa993"
+Path: /sitecore/content/Hackathon2023/Hackathon2023/Data/Images
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230304T011605Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a271d273-aeba-4b8d-ad8b-6da87ddc4c8e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230304T011605Z

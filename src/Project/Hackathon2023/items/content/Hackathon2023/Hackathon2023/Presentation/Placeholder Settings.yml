@@ -1,0 +1,31 @@
+﻿---
+ID: "b3267fe7-aef5-4e60-9611-a6514f5355ea"
+Parent: "db5a5a5a-627d-4e5b-a74c-cfb8c49ba92e"
+Template: "52288e39-7830-4694-b62d-32a54c6ef7ba"
+Path: /sitecore/content/Hackathon2023/Hackathon2023/Presentation/Placeholder Settings
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230304T011603Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "11db882e-e53a-4ca5-b92a-2615ab563539"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230304T011603Z
