@@ -39,11 +39,6 @@
                 "allowedPushOperations": "CreateUpdateAndDelete"
             },
             {
-                "name": "apikey",
-                "path": "/sitecore/system/Settings/Services/API Keys/NextJS API Key",
-                "allowedPushOperations": "CreateUpdateAndDelete"
-            },
-            {
                 "name": "phsettings",
                 "path": "/sitecore/layout/Placeholder Settings/Project/Hackathon2023",
                 "allowedPushOperations": "CreateUpdateAndDelete"
