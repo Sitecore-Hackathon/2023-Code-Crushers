@@ -10,6 +10,7 @@ import {
   Field,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import Scripts from 'src/Scripts';
+import Rendering from 'components/sxa-extensions/Rendering';
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
@@ -40,6 +41,7 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
 
       {/* root placeholder for the app, which we add components to using route data */}
       <div className={mainClassPageEditing}>
+        <Rendering guid="{F6D0F83F-E6A9-4509-862F-9585A6F7CA74}" />
         {route && <Placeholder name="hackathon2023-alerts" rendering={route} />}
         <header>
           <div id="header">
