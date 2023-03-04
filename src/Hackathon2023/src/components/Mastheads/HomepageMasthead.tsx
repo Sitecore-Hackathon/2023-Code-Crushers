@@ -1,4 +1,4 @@
-import { Text, RichText, Field, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Text, RichText, Field, ImageField, Image } from '@sitecore-jss/sitecore-jss-nextjs';
 import { withDatasourceRendering } from 'components/sxa-extensions/withDatasourceRendering';
 import { ComponentProps } from 'lib/component-props';
 
@@ -18,10 +18,14 @@ type HomepageMastheadProps = ComponentProps & {
  */
 const HomepageMasthead = ({ fields }: HomepageMastheadProps): JSX.Element => {
   return (
-    <div className="contentBlock">
-      <Text tag="h2" className="contentTitle" field={fields?.heading} />
-
-      <RichText className="contentDescription" field={fields?.subheading} />
+    <div className="content-block">
+      <div className="content-block__content">
+        <Text tag="h1" className="title" field={fields?.heading} />
+        <RichText className="description" field={fields?.subheading} />
+      </div>
+      <div className="image-container">
+        <Image field={{ value: { src: fields.image.value?.src } }} />
+      </div>
     </div>
   );
 };
