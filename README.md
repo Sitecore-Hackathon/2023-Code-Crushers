@@ -27,7 +27,7 @@ Enhacements to SXA Headless
 
 ## Video link
 
-[Demo Video Link](#video-link)
+[Demo Video Link](docs/videos/video.mp4)
 
 ## Pre-requisites and Dependencies
 
