@@ -1,0 +1,57 @@
+@import '@sass/abstracts/mixins';
+@import 'variables';
+
+.footer {
+  background-color: #eb7f13;
+  @include respond-to(mobile-large) {
+    padding: $middle-margin;
+  }
+  padding: $extralarge-margin;
+  font-size: $font-normal;
+  inline-size: 100%;
+
+  @include respond-to(mobile-large) {
+    padding-top: 0;
+  }
+
+  .logo {
+    inline-size: 150px;
+    aspect-ratio: 1/1;
+    block-size: auto;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond-to(mobile-large) {
+    }
+  }
+
+  .copyright {
+    font-size: $font-medium;
+    inline-size: fit-content;
+  }
+
+  .contacts {
+    font-size: $text-size-14;
+
+    a {
+      color: $text-white;
+    }
+
+    p,
+    span {
+      color: $text-white;
+    }
+  }
+
+  .indent-inner {
+    padding: 65px;
+
+    @include respond-to(mobile-large) {
+      padding: 40px 0;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+﻿---
+ID: "e3d2df82-ba80-48f9-b941-3b2ca8e7b198"
+Parent: "14e6086d-64a1-4c2d-a359-9b0e4d80a411"
+Template: "e4e11508-04a4-4b0b-a263-5201f811c9cd"
+Path: /sitecore/layout/Layouts/Project/Hackathon2023/JSS Layout
+SharedFields:
+- ID: "80334869-86dc-4472-aa89-44cf1b2f6c9b"
+  Hint: Placeholders
+  Value: |
+    {92ED5EB8-717C-4A57-ACB4-AE7A0199F6AC}
+    {A4CB492B-CF00-4B7D-B742-2305A8B0C38E}
+    {F81F631D-DC72-4B05-AE0F-F1B76462B831}
+    {F4AF58AA-5DD7-43F1-9AF9-880F68A41F60}
+    {ECFE6AE6-B1FF-4623-8BB1-9D78023467FC}
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Value: 
+- ID: "a036b2bc-ba04-44f6-a75f-bae6cd242abf"
+  Hint: Path
+  Value: /Views/SXA JSS/SXA JSS Layout.cshtml
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Headless Layout
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190111T114424Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9f26b431-f9f8-48c1-be53-308d16877c1d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230304T023525Z

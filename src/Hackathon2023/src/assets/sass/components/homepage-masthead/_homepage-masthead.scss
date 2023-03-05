@@ -1,0 +1,39 @@
+.homepage-masthead {
+  overflow: hidden;
+  position: relative;
+  min-block-size: 780px;
+  display: grid;
+  place-content: center;
+  color: $text-white;
+  text-align: center;
+
+  @include respond-to(mobile-large) {
+    min-block-size: 650px;
+  }
+
+  .title {
+    @include respond-to(mobile-large) {
+      font-size: $font-big;
+    }
+
+    font-size: $font-extrabig;
+  }
+
+  .description {
+    font-size: $font-medium;
+  }
+
+  .image {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+
+  img {
+    object-fit: cover;
+    object-position: center;
+    inline-size: 100%;
+    block-size: 100%;
+    filter: brightness(0.5);
+  }
+}

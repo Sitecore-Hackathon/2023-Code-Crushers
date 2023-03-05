@@ -1,0 +1,40 @@
+﻿---
+ID: "83acc2cf-0ba2-43c3-8b78-7432eeca2225"
+Parent: "dd2e5611-5bca-42c4-b4d2-3c35efde6bc4"
+Template: "53412057-883a-443f-bbb7-ac0ac6dd04f5"
+Path: /sitecore/content/Hackathon2023/Hackathon2023/Data/Alert Folder/Alert 2
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230304T113438Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "58647e8b-655d-4b95-8b67-b67e3fc53e91"
+      Hint: alertstyle
+      Value: secondary
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e3bb046b-3d8e-4d3b-b8c6-a45afac442af"
+    - ID: "8f9d6517-e33e-4d71-8965-3af2fa42d84c"
+      Hint: copy
+      Value: orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm
+    - ID: "b61928fb-87fb-48e9-8f65-720664fd3c2a"
+      Hint: heading
+      Value: Alert 2
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230304T113602Z

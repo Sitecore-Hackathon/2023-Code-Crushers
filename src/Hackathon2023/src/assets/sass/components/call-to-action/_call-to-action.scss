@@ -1,0 +1,96 @@
+@import '@sass/abstracts/vars';
+@import '@sass/abstracts/mixins';
+
+.call-to-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  .row > & {
+    margin: 50px 0;
+  }
+
+  @include respond-to(mobile-large) {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+  }
+
+  &.call-to-action--image-left {
+    flex-direction: row-reverse;
+
+    @include respond-to(mobile-large) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .image-container {
+    flex-basis: 33.3%;
+
+    @include respond-to(mobile-large) {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      inline-size: 100%;
+      block-size: auto;
+
+      @include respond-to(mobile-large) {
+        inline-size: 50%;
+        block-size: auto;
+      }
+    }
+  }
+
+  .title {
+    @include respond-to(mobile-large) {
+      font-size: $font-medium;
+    }
+
+    font-size: $font-big;
+  }
+
+  @include respond-to(mobile-large) {
+    flex-direction: column;
+  }
+
+  .description {
+    font-size: $font-medium;
+  }
+
+  .content {
+    inline-size: 100%;
+    @include respond-to(mobile-large) {
+      padding: $middle-margin;
+    }
+    padding: $extralarge-margin;
+  }
+
+  .cta {
+    display: block;
+    margin-block-start: $large-margin;
+    padding-block: $small-margin;
+    padding-inline: $middle-margin;
+    border: 2px solid $btn-red;
+    border-radius: 5px;
+    text-decoration: none;
+    inline-size: fit-content;
+    color: $btn-red;
+    transition: all 0.3s ease;
+    font-size: $font-normal;
+
+    @include respond-to(mobile-large) {
+      inline-size: 100%;
+      text-align: center;
+    }
+
+    &:hover {
+      background-color: $btn-red;
+      color: $white;
+    }
+  }
+}

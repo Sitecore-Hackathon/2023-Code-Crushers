@@ -1,0 +1,14 @@
+@import '@sass/abstracts/vars';
+@import '@sass/abstracts/mixins';
+
+.alert-banner {
+  .bi {
+    width: 32px;
+    height: 32px;
+    fill: currentcolor;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}

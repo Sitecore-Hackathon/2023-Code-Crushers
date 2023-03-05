@@ -1,0 +1,30 @@
+@import '@sass/abstracts/vars';
+@import '@sass/abstracts/mixins';
+
+.title {
+  background: $title-bg;
+
+  .row > & {
+    padding-block: $middle-margin;
+    padding-inline: $middle-margin;
+  }
+
+  h1,
+  .field-title {
+    > a,
+    > span {
+      font-size: $font-extrabig;
+      margin-bottom: $small-margin;
+      color: $black;
+      line-height: normal;
+      padding-bottom: 10px;
+      display: block;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover {
+        color: $title-color-active;
+      }
+    }
+  }
+  @import '@sass/variants/title';
+}

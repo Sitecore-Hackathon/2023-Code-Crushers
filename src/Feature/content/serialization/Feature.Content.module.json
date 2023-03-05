@@ -1,0 +1,23 @@
+{
+    "$schema": "../../../../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "Feature.Content",
+    "items": {
+        "includes": [
+            {
+                "name": "templates",
+                "path": "/sitecore/templates/Feature/Hackathon2023/Content",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "renderings",
+                "path": "/sitecore/layout/Renderings/Feature/Hackathon2023/Content",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "mediaLibrary",
+                "path": "/sitecore/media library/Feature/Hackathon2023/Content",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            }
+        ]
+    }
+}

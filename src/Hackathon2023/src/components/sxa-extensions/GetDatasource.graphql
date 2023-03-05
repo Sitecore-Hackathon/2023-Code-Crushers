@@ -1,0 +1,14 @@
+# Write your query or mutation here
+# Write your query or mutation here
+query GetDatasource($datasourceId: String!, $language: String!) {
+  # path can be an item tree path or GUID-based id
+  dataSource: item(path: $datasourceId, language: $language) {
+    # fields can be cast to a Field type with inline fragments
+    id
+    fields {
+      name
+      value
+      jsonValue
+    }
+  }
+}

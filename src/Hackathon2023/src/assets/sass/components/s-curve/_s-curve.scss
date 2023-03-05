@@ -1,0 +1,81 @@
+@import '@sass/abstracts/vars';
+@import '@sass/abstracts/mixins';
+
+.s-curve {
+  display: flex;
+  align-items: center;
+
+  &:nth-of-type(odd) {
+    flex-direction: row-reverse;
+
+    @include respond-to(mobile-large) {
+      flex-direction: column;
+    }
+  }
+
+  & > * {
+    flex: 50% 0 0;
+
+    @include respond-to(mobile-large) {
+      flex: 100% 1 1;
+    }
+  }
+
+  .image-container {
+    overflow: hidden;
+
+    img {
+      inline-size: 100%;
+      block-size: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .title {
+    @include respond-to(mobile-large) {
+      font-size: $font-big;
+    }
+
+    font-size: $font-extrabig;
+  }
+
+  @include respond-to(mobile-large) {
+    flex-direction: column;
+  }
+
+  .description {
+    font-size: $font-medium;
+  }
+
+  .content {
+    inline-size: 100%;
+    @include respond-to(mobile-large) {
+      padding: $middle-margin;
+    }
+    padding: $extralarge-margin;
+  }
+
+  .cta {
+    display: block;
+    margin-block-start: $large-margin;
+    padding-block: $small-margin;
+    padding-inline: $middle-margin;
+    border: 2px solid $btn-red;
+    border-radius: 5px;
+    text-decoration: none;
+    inline-size: fit-content;
+    color: $btn-red;
+    transition: all 0.3s ease;
+    font-size: $font-normal;
+
+    @include respond-to(mobile-large) {
+      inline-size: 100%;
+      text-align: center;
+    }
+
+    &:hover {
+      background-color: $btn-red;
+      color: $white;
+    }
+  }
+}

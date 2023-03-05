@@ -1,0 +1,34 @@
+﻿---
+ID: "ae477945-aa6c-4843-b738-c43fb8215d48"
+Parent: "d57535be-6984-482f-9c3e-85bea0b417f7"
+Template: "d57535be-6984-482f-9c3e-85bea0b417f7"
+Path: /sitecore/templates/Feature/Hackathon2023/Content/Call To Action/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "022c8112-f5f3-449e-ab5d-1375a76aedaa"
+      Hint: heading
+      Value: $name
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230304T174014Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d5ed8fef-6c57-4ad8-b19c-fb95712aa1dc"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230304T174020Z

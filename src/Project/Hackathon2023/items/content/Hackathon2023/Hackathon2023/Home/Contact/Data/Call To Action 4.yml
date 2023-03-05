@@ -1,0 +1,36 @@
+﻿---
+ID: "ee688f72-7fd0-46c3-8395-25ab00429e08"
+Parent: "68b6cd4f-e043-4c7e-ac98-f7af36ef0bbe"
+Template: "d57535be-6984-482f-9c3e-85bea0b417f7"
+Path: /sitecore/content/Hackathon2023/Hackathon2023/Home/Contact/Data/Call To Action 4
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "022c8112-f5f3-449e-ab5d-1375a76aedaa"
+      Hint: heading
+      Value: Email Code Crushers
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230304T175451Z
+    - ID: "2ff949b8-5baf-4caf-b82e-0c2f5161461a"
+      Hint: image
+      Value: |
+        <image mediaid="{92D6DEEB-28FB-4BBD-92B8-A6120977E8D2}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1241e308-a42a-4c8c-b7e2-802cc5531c51"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c973aa06-2ee0-445c-8225-f1bd3c93e2e2"
+      Hint: copy
+      Value: Lorem Ipsum Description with your enquiry
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230304T191633Z
